@@ -18,7 +18,7 @@ function App() {
     {
       path: "/",
       element: <Layout data={data} />, // Render Layout component at the root
-      children: [ // Define children routes
+      children: [
         {
           index: true,
           element: <div>Select a Pokemon</div>, // This will be rendered inside the <Outlet> of Layout
@@ -38,7 +38,7 @@ function App() {
         <div></div>
         <Routes>
           <Route index element={<div className='flex w-6/12	text-3xl text-center  '>
-            <p className='mx-auto' style={{ marginTop: '120px' }}>Select a Pokemon</p>
+            <p className='mx-auto text-white' style={{ marginTop: '120px' }}>Select a Pokemon</p>
             </div>} />
           <Route path="pokemon/:name" element={<PokemonPage />} />
         </Routes>

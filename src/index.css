@@ -12,9 +12,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; */
-  background-color: #f50404;
-  background-image: linear-gradient(180deg, #f50404 0%, #FF0000 25%, #da282c 64%, #600808 100%);
-    font-family: 'Pixelify Sans', sans-serif
+  /* background-color: #f50404;
+  background-image: linear-gradient(180deg, #f50404 0%, #FF0000 25%, #da282c 64%, #600808 100%); */
+  background-color: rgb(55 48 163);
+    font-family: 'Pixelify Sans', sans-serif;
+    background-repeat: no-repeat;
 
 
 
