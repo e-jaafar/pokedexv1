@@ -13,19 +13,18 @@ function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  // Create the router with a route config
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Layout data={data} />, // Render Layout component at the root
+      element: <Layout data={data} />,
       children: [
         {
           index: true,
-          element: <div>Select a Pokemon</div>, // This will be rendered inside the <Outlet> of Layout
+          element: <div>Select a Pokemon</div>, 
         },
         {
           path: "pokemon/:name",
-          element: <PokemonPage />, // This will be rendered inside the <Outlet> of Layout
+          element: <PokemonPage />, 
         },
       ],
     },
@@ -51,7 +50,8 @@ function App() {
   }
 
   return (
-    <RouterProvider router={router} /> // Render the RouterProvider at the top level
+    <RouterProvider router={router} /> 
+    
   );
 }
 

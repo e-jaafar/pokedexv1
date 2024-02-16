@@ -14,7 +14,7 @@ function PokemonPage() {
     // ----------------------
 
     useEffect(() => {
-        setLoading(true); // reset loading state to true when name changes
+        setLoading(true); 
         axios.get(`https://pokebuildapi.fr/api/v1/pokemon/${name}`)
             .then((response) => {
                 setTimeout(() => {
