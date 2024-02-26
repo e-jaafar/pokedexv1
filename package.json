@@ -42,5 +42,9 @@
   },
   "devDependencies": {
     "gh-pages": "^6.1.1"
+  },
+  {
+    "homepage": "https://e-jaafar.github.io/pokedexv1/"
   }
+
 }
