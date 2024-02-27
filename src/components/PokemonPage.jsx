@@ -60,7 +60,7 @@ function PokemonPage() {
                     <div>ID Pokédex : <span className='ml-1'>{data.id}</span></div>
                     <h3 className="text-3xl">{data.name}</h3>
                     <div className='text-xl'>
-                        {/* <p>Height: {data.height}</p> */}
+                {/* <p>Height: {data.height}</p> */}
                         {data.apiEvolutions.length > 0 && (
     <div>
     <p className='text-xl flex mr-2 '>Evolution :  {data.apiEvolutions.map((evolution, index) => (
