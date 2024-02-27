@@ -22,7 +22,7 @@ function HomePage({ data }) {
     const currentData = filteredData.slice(startIndex, endIndex);
     
     return (
-        <div className="w-100 h-100 bg-indigo-800 overflow-scroll h-screen ">
+        <div className="w-100 h-100 bg-indigo-800 overflow-scroll h-screen">
             
             <Link to={'/'}> <img className='h-28 mx-auto' src={pkmn} alt="" /> </Link>
             <div style={{ display: 'flex', flexDirection: 'row', width: '100%' }} className="w-100 h-100 flex items-center  justify-evenly my-10">
