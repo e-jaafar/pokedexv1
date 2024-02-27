@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import { RouterProvider, createBrowserRouter, Route, Routes } from 'react-router-dom'; // Import Routes
+import { RouterProvider, createBrowserRouter, Route, Routes, createHashRouter } from 'react-router-dom'; // Import Routes
 import PokemonPage from './components/PokemonPage';
 import HomePage from './components/HomePage';
+import { HashRouter } from 'react-router-dom';
 
 function App() {
   const [data, setData] = useState([]);
@@ -13,7 +14,7 @@ function App() {
       .catch((error) => console.log(error));
   }, []);
 
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: "/",
       element: <Layout data={data} />,
